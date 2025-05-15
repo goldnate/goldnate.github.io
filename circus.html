@@ -13,23 +13,19 @@
     width: 100vw;
     max-width: 120ch;
     margin: 20px auto;
+    font-family: 'Noto Serif Hebrew',serif,sans;
   }
   h1 {
     font-size: 24px;
     line-height: 30px;
+    margin: 40px 0 0 0;
+    padding: 0;
   }
   p {
+  width: 100%;
     font-size: 20px;
     line-height: 32px;
     padding:0;
-  }
-  h1 {
-    margin: 40px 0 0 0;
-  }
-  h1 + p {
-    margin: 1.6em 0 0 0;
-  }
-  p + p {
     margin: 1.6em 0 0 0;
   }
   .wrapper span {
@@ -45,12 +41,12 @@
     margin: 0;
     padding: 0 4px;
     vertical-align: top;
+    font-weight: normal;
+    font-style: normal;
   }
   b {
-    font-weight: normal;
   }
   i {
-    font-family: 'Noto Serif Hebrew',serif,sans;
     direction: rtl;
   }
   h1 i {
@@ -64,58 +60,81 @@
     .wrapper span {
       padding: 0;
   }
+    h1, h1 i {
+      font-size: max(5.4vw,12px);
+  }
     p {
-      font-size: max(3.2vw,8px);
+      font-size: max(3.6vw,8px);
       line-height: max(4vw,10px);
     }
     p i {
-      font-size: max(3.2vw,8px);
+      font-size: max(3.6vw,8px);
     }
+    p i:after,p b:after {
+      text-wrap: nowrap;
+      opacity: 0.1;
+      font-size: 80%;
+      display: inline;
+      letter-spacing: 0px;
+      vertical-align: text-top;
+    }
+  p i:after {
+    content: ' \\';
+  }
+  p b:after {
+    content: ' /';
   }
   </style>
   <script src=""></script>
   <body>
 
     <div class="wrapper">
-	<h1>
-	  <span><i>די צירקוס-דאַמע</i>
-	    <b>The Circus Lady</b></span>
-	</h1>
-	<p>
-	  <span><i>איך בין אַ צירקוס-דאַמע</i>
+      <h1>
+	<span><i>די צירקוס-דאַמע</i>
+	  <b>The Circus Lady</b></span>
+      </h1>
+      <p style="text-align: center; margin:0;">by Celia Dropkin
+      </p>
+      <p>
+	<span><i>איך בין אַ צירקוס-דאַמע</i>
 	  <b>I&rsquo;m a circus lady,</b></span>
-	  <span><i>און טאַנצ צװישן קינזשאַלן,</i>
+	<span><i>און טאַנצ צװישן קינזשאַלן,</i>
 	  <b>I dance between the knives</b></span>
-	  <span><i>װאַס זײַנען אױפֿגעשטעלט אױף דער אַרענע</i>
+	<span><i>װאָס זײַנען אױפֿגעשטעלט אױף דער אַרענע</i>
 	  <b>standing in the ring,</b></span>
-	  <span><i>מיט די שפּיצן אַרױף.</i>
+	<span><i>מיט די שפּיצן אַרױף.</i>
 	  <b>tips pointing up.</b></span>
-	  <span><i>מײַנ בײגזאַם לײַכטער גוף</i>
+	<span><i>מײַנ בײגזאַם לײַכטער גוף</i>
 	  <b>My lightly bending body</b></span>
-	  <span><i>מײַדט אױס דעמ טױט פֿון פֿאַלן</i>
+	<span><i>מײַדט אױס דעמ טױט פֿון פֿאַלן</i>
 	  <b>avoids death from falling</b></span>
-	  <span><i>באַרירנדיק קױם, קױם דעם שאַרף פֿון די קינזשאַלן.</i>
-	  <b>by brushing lightly, lightly against the blades.
-	</p>
-
-
-	<p>
-	</p>
-	<p>
-	  <b>Breathless, the watch me dance</b></span>
+	<span><i>באַרירנדיק קױם, קױם דעם שאַרף פֿון די קינזשאַלן.</i>
+	  <b>by brushing lightly, lightly against the blades.</b></span>
+      </p>
+      <p>
+	<span><i>מיט אַ פֿאַרכאַפּטן אָמעם קוקט מען אױף מײַן טאַנצן</i>
+	  <b>Breathless, they watch me dance</b></span>
+	<span><i> </i>
 	  <b>and someone prays for me.</b></span>
+	<span><i> </i>
 	  <b>Before my eyes the points</b></span>
+	<span><i> </i>
 	  <b>flash in a fiery wheel,&mdash;</b></span>
-	  <b>and no one knows how I want to fall.
-	</p>
-	<p>
+	<span><i> </i>
+	  <b>and no one knows how I want to fall.</b></span>
+      </p>
+      <p>
+	<span><i> </i>
 	  <b>I&rsquo;m tired of dancing between</b></span>
+	<span><i> </i>
 	  <b>you, cold steel knives.</b></span>
+	<span><i> </i>
 	  <b>I want my blood to scald you,</b></span>
+	<span><i> </i>
 	  <b>I want to fall</b></span>
+	<span><i> </i>
 	  <b>on your naked tips.</b></span>
-	</p>
-      </div>
+      </p>
     </div>
 
   </body>

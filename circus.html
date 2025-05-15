@@ -5,11 +5,15 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="">
   <style>
+  body {
+  padding:0;
+  margin:0;
+  }
   .wrapper {
-    width: 100vw;  
+    width: 100vw;
     max-width: 120ch;
     margin: 20px auto;
-    display: flex;
+  display: flex;
   }
   .wrapper > div {
     width: 50%;
@@ -45,6 +49,21 @@
   .yiddish p {
     font-size: 25px;
   }
+  .yiddish p:first-child {
+    margin-top: 31px;
+  }
+  @media screen and (max-width: 1029px) {
+    p {
+      font-size: max(3.4vw,8px);
+      line-height: max(4vw,10px);
+    }
+    .yiddish p {
+      font-size: max(3.2vw,8px);
+    }
+    .yiddish p:first-child {
+      margin-top: 0;
+    }
+  }
   </style>
   <script src=""></script>
   <body>
@@ -54,7 +73,7 @@
 	<h1>
 	  די צירקוס-דאַמע
 	</h1>
-	<p style="margin-top: 31px;">
+	<p>
 	  איך בין אַ צירקוס-דאַמע <br>
 	  און טאַנצ צװישן קינזשאַלן, <br>
 	  װאַס זײַנען אױפֿגעשטעלט אױף דער אַרענע <br>

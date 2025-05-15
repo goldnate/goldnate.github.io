@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <title>The Circus Lady</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="">
+  <style>
+  .wrapper {
+    width: 100ch;
+    margin: 20px auto;
+  display: flex;
+  }
+  .wrapper > div {
+    width: 50%;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  h1 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 32px;
+    padding:0;
+  }
+  h1 {
+    margin: 40px 0 0 0;
+  }
+  h1 + p {
+    margin: 1.6em 0 0 0;
+  }
+  p + p {
+    margin: 1.6em 0 0 0;
+  }
+  .yiddish {
+    font-family: 'Noto Serif Hebrew',serif,sans;
+  }
+  .yiddish h1 {
+    font-size: 32px;
+    line-height: 30px;
+  }
+  .yiddish p {
+    font-size: 25px;
+  }
+  </style>
+  <script src=""></script>
+  <body>
+
+    <div class="wrapper">
+      <div lang="yi" dir="rtl" class="yiddish">
+	<h1>
+	  די צירקוס-דאַמע
+	</h1>
+	<p style="margin-top: 31px;">
+	  איך בין אַ צירקוס-דאַמע <br>
+	  און טאַנצ צװישן קינזשאַלן, <br>
+	  װאַס זײַנען אױפֿגעשטעלט אױף דער אַרענע <br>
+	  tips pointing up. <br>
+	  My lightly bending body <br>
+	  avoids death from falling <br>
+	  by brushing lightly, lightly against the blades.
+	</p>
+      </div>
+
+
+      <div lang="en" class="english">
+	<h1>The Circus Lady</h1>
+	<p>
+	  I&rsquo;m a circus lady, <br>
+	  I dance between the knives <br>
+	  standing in the ring, <br>
+	  tips pointing up. <br>
+	  My lightly bending body <br>
+	  avoids death from falling <br>
+	  by brushing lightly, lightly against the blades.
+	</p>
+	<p>
+	  Breathless, the watch me dance <br>
+	  and someone prays for me. <br>
+	  Before my eyes the points <br>
+	  flash in a fiery wheel,&mdash; <br>
+	  and no one knows how I want to fall.
+	</p>
+	<p>
+	  I&rsquo;m tired of dancing between <br>
+	  you, cold steel knives. <br>
+	  I want my blood to scald you, <br>
+	  I want to fall <br>
+	  on your naked tips.
+	</p>
+      </div>
+    </div>
+
+  </body>
+</html>

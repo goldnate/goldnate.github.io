@@ -13,13 +13,6 @@
     width: 100vw;
     max-width: 120ch;
     margin: 20px auto;
-  display: flex;
-  }
-  .wrapper > div {
-    width: 50%;
-    padding: 10px;
-    margin: 0;
-    box-sizing: border-box;
   }
   h1 {
     font-size: 24px;
@@ -39,32 +32,44 @@
   p + p {
     margin: 1.6em 0 0 0;
   }
-  .yiddish {
-    font-family: 'Noto Serif Hebrew',serif,sans;
+  .wrapper span {
+    display: block;
+    padding: 0 10px;
+    margin: 0;
+    box-sizing: border-box;
+    vertical-align: top;
   }
-  .yiddish h1 {
+  i,b {
+    width: calc(50% - 16px);
+    display: inline-block;
+    margin: 0;
+    padding: 0 4px;
+    vertical-align: top;
+  }
+  b {
+    font-weight: normal;
+  }
+  i {
+    font-family: 'Noto Serif Hebrew',serif,sans;
+    direction: rtl;
+  }
+  h1 i {
     font-size: 32px;
     line-height: 30px;
   }
-  .yiddish p {
+  p i {
     font-size: 25px;
   }
-  .yiddish p:first-child {
-    margin-top: 31px;
-  }
   @media screen and (max-width: 1029px) {
-    .wrapper > div {
-      padding: 4px;
+    .wrapper span {
+      padding: 0;
   }
     p {
-      font-size: max(3.4vw,8px);
+      font-size: max(3.2vw,8px);
       line-height: max(4vw,10px);
     }
-    .yiddish p {
+    p i {
       font-size: max(3.2vw,8px);
-    }
-    .yiddish p:first-child {
-      margin-top: 0;
     }
   }
   </style>
@@ -72,46 +77,43 @@
   <body>
 
     <div class="wrapper">
-      <div lang="yi" dir="rtl" class="yiddish">
 	<h1>
-	  די צירקוס-דאַמע
+	  <span><i>די צירקוס-דאַמע</i>
+	    <b>The Circus Lady</b></span>
 	</h1>
 	<p>
-	  איך בין אַ צירקוס-דאַמע <br>
-	  און טאַנצ צװישן קינזשאַלן, <br>
-	  װאַס זײַנען אױפֿגעשטעלט אױף דער אַרענע <br>
-מיט די שפּיצן אַרױף. <br>
-	  מײַנ בײגזאַם לײַכטער גוף <br>
-	  מײַדט אױס דעמ טױט פֿון פֿאַלן <br>
-	  באַרירנדיק קױם, קױם דעם שאַרף פֿון די קינזשאַלן.
+	  <span><i>איך בין אַ צירקוס-דאַמע</i>
+	  <b>I&rsquo;m a circus lady,</b></span>
+	  <span><i>און טאַנצ צװישן קינזשאַלן,</i>
+	  <b>I dance between the knives</b></span>
+	  <span><i>װאַס זײַנען אױפֿגעשטעלט אױף דער אַרענע</i>
+	  <b>standing in the ring,</b></span>
+	  <span><i>מיט די שפּיצן אַרױף.</i>
+	  <b>tips pointing up.</b></span>
+	  <span><i>מײַנ בײגזאַם לײַכטער גוף</i>
+	  <b>My lightly bending body</b></span>
+	  <span><i>מײַדט אױס דעמ טױט פֿון פֿאַלן</i>
+	  <b>avoids death from falling</b></span>
+	  <span><i>באַרירנדיק קױם, קױם דעם שאַרף פֿון די קינזשאַלן.</i>
+	  <b>by brushing lightly, lightly against the blades.
 	</p>
-      </div>
 
 
-      <div lang="en" class="english">
-	<h1>The Circus Lady</h1>
 	<p>
-	  I&rsquo;m a circus lady, <br>
-	  I dance between the knives <br>
-	  standing in the ring, <br>
-	  tips pointing up. <br>
-	  My lightly bending body <br>
-	  avoids death from falling <br>
-	  by brushing lightly, lightly against the blades.
 	</p>
 	<p>
-	  Breathless, the watch me dance <br>
-	  and someone prays for me. <br>
-	  Before my eyes the points <br>
-	  flash in a fiery wheel,&mdash; <br>
-	  and no one knows how I want to fall.
+	  <b>Breathless, the watch me dance</b></span>
+	  <b>and someone prays for me.</b></span>
+	  <b>Before my eyes the points</b></span>
+	  <b>flash in a fiery wheel,&mdash;</b></span>
+	  <b>and no one knows how I want to fall.
 	</p>
 	<p>
-	  I&rsquo;m tired of dancing between <br>
-	  you, cold steel knives. <br>
-	  I want my blood to scald you, <br>
-	  I want to fall <br>
-	  on your naked tips.
+	  <b>I&rsquo;m tired of dancing between</b></span>
+	  <b>you, cold steel knives.</b></span>
+	  <b>I want my blood to scald you,</b></span>
+	  <b>I want to fall</b></span>
+	  <b>on your naked tips.</b></span>
 	</p>
       </div>
     </div>

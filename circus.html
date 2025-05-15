@@ -16,24 +16,22 @@
     font-family: 'Noto Serif Hebrew',serif,sans;
   }
   h1 {
-    font-size: 24px;
-    line-height: 30px;
     margin: 40px 0 0 0;
     padding: 0;
   }
   p {
   width: 100%;
-    font-size: 20px;
-    line-height: 32px;
     padding:0;
     margin: 1.6em 0 0 0;
   }
-  .wrapper span {
+  span {
     display: block;
     padding: 0 10px;
     margin: 0;
     box-sizing: border-box;
     vertical-align: top;
+    font-size: 20px;
+    line-height: 1.2;
   }
   i,b {
     width: calc(50% - 16px);
@@ -44,35 +42,47 @@
     font-weight: normal;
     font-style: normal;
   }
-  b {
+  p b {
+    line-height: 1.6;
   }
   i {
     direction: rtl;
   }
+  h1 b {
+    font-size: 28px;
+    line-height: 32px;
+  }
   h1 i {
     font-size: 32px;
-    line-height: 30px;
+    line-height: 28px;
   }
   p i {
-    font-size: 25px;
+    font-size: 1.2em;
+    line-height: 1.2;
   }
   @media screen and (max-width: 1029px) {
     .wrapper span {
       padding: 0;
   }
-    h1, h1 i {
+    h1 b {
       font-size: max(5.4vw,12px);
+      line-height: 1.4;
   }
-    p {
-      font-size: max(3.6vw,8px);
+    h1 i {
+      font-size: max(6.0vw,12px);
+      line-height: 1.1;
+  }
+    p b {
+      font-size: max(3.2vw,8px);
       line-height: max(4vw,10px);
     }
     p i {
       font-size: max(3.6vw,8px);
+      line-height: max(3.8vw,10px);
     }
     p i:after,p b:after {
       text-wrap: nowrap;
-      opacity: 0.3;
+      opacity: 0.1;
       font-size: 80%;
       display: inline;
       letter-spacing: 0px;
@@ -114,25 +124,25 @@
       <p>
 	<span><i>מיט אַ פֿאַרכאַפּטן אָמעם קוקט מען אױף מײַן טאַנצן</i>
 	  <b>Breathless, they watch me dance</b></span>
-	<span><i> </i>
+	<span><i>און עמעץ בעט דאָרט פֿאַר מיך גאָט.</i>
 	  <b>and someone prays for me.</b></span>
-	<span><i> </i>
+	<span><i>פֿאַר מײַנע אױגן גלאַנצן</i>
 	  <b>Before my eyes the points</b></span>
-	<span><i> </i>
-	  <b>flash in a fiery wheel,&mdash;</b></span>
-	<span><i> </i>
+	<span><i>די שפּיצן אין אַ פֿײַערדיקן ראָד, &mdash;</i>
+	  <b>flash in a fiery wheel, &mdash;</b></span>
+	<span><i>און קײנער װײס ניט, װי מיר װילט זיך פֿאַלן.</i>
 	  <b>and no one knows how I want to fall.</b></span>
       </p>
       <p>
-	<span><i> </i>
+	<span><i>מיד בין איך פֿון טאַנצן צװישן אײַך,</i>
 	  <b>I&rsquo;m tired of dancing between</b></span>
-	<span><i> </i>
+	<span><i>קאַלטע שטאָלענע קינזשאַלן.</i>
 	  <b>you, cold steel knives.</b></span>
-	<span><i> </i>
+	<span><i>איך װיל מײַן בלוט זאָל אײַך דערהיצן,</i>
 	  <b>I want my blood to scald you,</b></span>
-	<span><i> </i>
+	<span><i>אױף אײַערע אַנטבלױזטע שפּיצן</i>
 	  <b>I want to fall</b></span>
-	<span><i> </i>
+	<span><i>װיל איך פֿאַלן.</i>
 	  <b>on your naked tips.</b></span>
       </p>
     </div>

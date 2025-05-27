@@ -1,118 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8">
-  <title>The Circus Lady</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="">
-  <style>
-  body {
-  padding:0;
-  margin:0;
-  }
-  .wrapper {
-    width: 100vw;
-    max-width: 120ch;
-    margin: 20px auto;
-    font-family: 'Noto Serif Hebrew',serif,sans;
-  }
-  h1 {
-    margin: 40px 0 0 0;
-    padding: 0;
-  }
-  p {
-  width: 100%;
-    padding:0;
-    margin: 1.6em 0 0 0;
-  }
-  span {
-    display: block;
-    padding: 0 10px;
-    margin: 0;
-    box-sizing: border-box;
-    vertical-align: top;
-    font-size: 20px;
-    line-height: 1.2;
-  }
-  i,b {
-    width: calc(50% - 16px);
-    display: inline-block;
-    margin: 0;
-    padding: 0 4px;
-    vertical-align: top;
-    font-weight: normal;
-    font-style: normal;
-  }
-  p b {
-    line-height: 1.6;
-  }
-  i {
-    direction: rtl;
-  }
-  h1 b {
-    font-size: 28px;
-    line-height: 32px;
-  }
-  h1 i {
-    font-size: 32px;
-    line-height: 28px;
-  }
-  p i {
-    font-size: 1.2em;
-    line-height: 1.2;
-  }
-  @media screen and (max-width: 1029px) {
-    .wrapper span {
-      padding: 0;
-  }
-    h1 b {
-      font-size: max(5.4vw,12px);
-      line-height: 1.4;
-  }
-    h1 i {
-      font-size: max(6.0vw,12px);
-      line-height: 1.1;
-  }
-    p b {
-      font-size: max(3.2vw,8px);
-      line-height: max(4vw,10px);
-    }
-    p i {
-      font-size: max(3.6vw,8px);
-      line-height: max(3.8vw,10px);
-    }
-    p i:after,p b:after {
-      text-wrap: nowrap;
-      opacity: 0.1;
-      font-size: 80%;
-      display: inline;
-      letter-spacing: 0px;
-      vertical-align: text-top;
-    }
-  p i:after {
-    content: ' \\';
-  }
-  p b:after {
-    content: ' /';
-  
-  }
-  }
-  @media (prefers-color-scheme: dark) {
-	  body, body * {
-		  color: #eee;
-		  background: #333;
-	  }
-  }
-
-  </style>
-  <script src=""></script>
+  <head>
+    <meta charset="UTF-8">
+    <title>די צירקוס-דאַמע The Circus Lady</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="./yiddish.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src=""></script>
+  </head>
   <body>
+<style>
+    #english {position: absolute; left: -999px;}
+    label[for='english'] {display: block; margin: 10px auto; width: 180px; border: 1px solid #888; padding: 5px 10px; text-align: center; font-weight: 700; font-size: 120%;}
+    label:has(input:checked)::before {content:'Show '}
+    label:has(input:not(:checked))::before {content:"Hide "}
+    label:has(input:checked) + .wrapper span > b {width:0; height: 0; overflow:hidden;}
+    label:has(input:checked) + .wrapper span > i {width:60%; overflow:hidden;}
+</style>
 
+    <label for="english">English
+      <input type="checkbox" id="english" checked/>
+</label>
     <div class="wrapper">
       <h1>
 	<span><i>די צירקוס-דאַמע</i>
 	  <b>The Circus Lady</b></span>
       </h1>
-      <p style="text-align: center; margin:0;">by Celia Dropkin
+      <p style="margin:0;"><span><i>פֿון סעליע דראָפּקין</i>
+	<b>by Celia Dropkin</b></span>
       </p>
       <p>
 	<span><i>איך בין אַ צירקוס-דאַמע</i>
@@ -123,7 +40,7 @@
 	  <b>standing in the ring,</b></span>
 	<span><i>מיט די שפּיצן אַרױף.</i>
 	  <b>tips pointing up.</b></span>
-	<span><i>מײַנ בײגזאַם לײַכטער גוף</i>
+	<span><i>מײַן בײגזאַם לײַכטער גוף</i>
 	  <b>My lightly bending body</b></span>
 	<span><i>מײַדט אױס דעמ טױט פֿון פֿאַלן</i>
 	  <b>avoids death from falling</b></span>

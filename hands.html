@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>The Circus Lady</title>
+    <title>מײַנע הענט My Hands</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="./yiddish.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +12,9 @@
   </head>
   <body>
 
+    <label for="english">English
+      <input type="checkbox" id="english" checked/>
+</label>
     <div class="wrapper">
       <h1>
 	<span><i>מײַנע הענט</i>
@@ -22,7 +25,7 @@
       </p>
       <p>
 	<span><i>מײַנע הענט,</i>
-	  <b>My Hands,</b></span>
+	  <b>My hands,</b></span>
 	<span><i>צװײ שמיקלעך פֿון מײַן לײַב,</i>
 	  <b>two pieces of my body</b></span>
 	<span><i>װאָס איך שעם מיך ניט צו צײַגן,</i>
@@ -42,6 +45,13 @@
       </p>
       <p style="text-align: center;">&mdash;1948</p>
     </div>
-
+<style>
+    #english {position: absolute; left: -999px;}
+    label[for='english'] {display: block; margin: 10px auto; width: 180px; border: 1px solid #888; padding: 5px 10px; text-align: center; font-weight: 700; font-size: 120%;}
+    label:has(input:checked)::before {content:'Show '}
+    label:has(input:not(:checked))::before {content:"Hide "}
+    label:has(input:checked) + .wrapper span > b {width:0; height: 0; overflow:hidden;}
+    label:has(input:checked) + .wrapper span > i {width:60%; overflow:hidden;}
+</style>
   </body>
 </html>

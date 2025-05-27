@@ -1,0 +1,118 @@
+    body {
+    padding:0;
+    margin:0;
+    }
+    .wrapper {
+    width: 100vw;
+    max-width: 120ch;
+    margin: 20px auto;
+    font-family: 'Tinos','Noto Serif Hebrew',serif,sans;
+    font-size: 1.6rem;
+    }
+    h1 {
+    margin: 40px 0 0 0;
+    padding: 0;
+    font-size: 200%;
+    line-height: 1.4;
+    }
+    p {
+    width: 100%;
+    padding:0;
+    margin: 1.6em 0 0 0;
+    font-size: 110%;
+    }
+    span {
+    display: block;
+    padding: 0 10px;
+    margin: 0;
+    box-sizing: border-box;
+    vertical-align: top;
+    }
+    i,b {
+    width: calc(50% - 16px);
+    display: inline-block;
+    margin: 0;
+    padding: 0 4px;
+    vertical-align: top;
+    font-weight: normal;
+    font-style: normal;
+    }
+    i {
+    direction: rtl;
+    }
+    h1 b {
+      font-size: 120%;
+    }
+    h1 i {
+    font-size: 130%;
+    line-height: 1.20;
+    margin: 0;
+    padding: 0;
+    }
+    p b {
+    line-height: 1.6;
+    }
+    p i {
+    font-size: 110%;
+    line-height: 1.4;
+    }
+    @media screen and (max-width: 1029px) {
+      .wrapper span {
+      padding: 0;
+      }
+      h1 {
+	font-size: 10px;
+	line-height: 1;
+      }
+      h1 b {
+	margin-left: 0.6ch;
+      font-size: max(5.4vw,12px);
+      line-height: 1.4;
+      }
+      h1 i {
+      font-size: max(6.0vw,14px);
+      line-height: 1.1;
+      }
+      p {
+      font-size: max(3.2vw,12px);
+      line-height: 1.3;
+      }
+      p b {
+      line-height: 1.0;
+      }
+      p i {
+      font-size: 110%;
+      line-height: 0.9;
+      }
+      span {
+      border-bottom: 1px dotted #bbb;
+      }
+    }
+    @media (prefers-color-scheme: dark) {
+      body, body * {
+	color: #eee;
+	background: #333;
+      }
+    }
+    @media screen and (max-width: 1029px) and (prefers-color-scheme: dark) {
+      span {
+      border-bottom: 1px dotted #666;
+      }
+    }
+    /*
+    p i:after,p b:after {
+    text-wrap: nowrap;
+    opacity: 0.1;
+    font-size: 80%;
+    display: inline;
+    letter-spacing: 0px;
+    vertical-align: text-top;
+    }
+    p i:after {
+    content: ' \\';
+    }
+    p b:after {
+    content: ' /';
+    }
+    */
+    
